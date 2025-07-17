@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Button",
+    "path": "src/components/Button.tsx",
+    "rawInfo": {
+      "value": "import { FunctionComponent } from \"react\";\nimport \"./icons.css\";\nimport styles from \"./Button.module.css\";\nimport itnicons from \"./itnicons.svg\";\n\nconst Button: FunctionComponent = () => {\n  debugger\n  return (\n    <div className={styles.button}>\n      <div className={styles.text}>Search</div>\n      <img src={itnicons} width={30} height={30} alt=\"icon\"/>\n    </div>\n  );\n};\n\nexport default Button;\n"
+    },
+    "props": [],
+    "import": [
+      {
+        "path": "src/App.tsx",
+        "import": "import Button from \"./components/Button\";",
+        "relativeImport": "import Button from \"./components/Button\";"
+      }
+    ],
+    "lib": [
+      {
+        "name": "react",
+        "version": "^18.2.0"
+      }
+    ],
+    "codeSettings": {
+      "typescript": true,
+      "cssStyling": "CSS"
+    },
+    "clientId": "164894s",
+    "selectorId": "zufmqfsdietggelzkdksjtpu",
+    "previewItems": [
+      {
+        "url": "https://d3beo87skfz9b9.cloudfront.net/2zuFmQfsD04IetGgELzKDkSjtpU/bundle-1752750890699.js",
+        "type": 2
+      }
+    ]
+  }
+]

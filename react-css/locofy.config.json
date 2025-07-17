@@ -1,0 +1,7 @@
+{
+  "components": [
+    "./src/components/Button.tsx"
+  ],
+  "projectId": "2zuFmQfsD04IetGgELzKDkSjtpU",
+  "projectName": "custom-import-react"
+}

@@ -1,0 +1,190 @@
+.formTitle,
+.formTitleSubtext {
+  align-self: stretch;
+  position: relative;
+}
+.formTitleSubtext {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.formTitle {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: inherit;
+  color: #434343;
+}
+.formHeader {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-6xs);
+}
+.fillInYour,
+.yourName {
+  font-family: var(--components-button-large);
+  position: relative;
+  text-align: left;
+}
+.fillInYour {
+  align-self: stretch;
+  font-size: var(--font-size-lg);
+  line-height: 34px;
+  color: #576074;
+}
+.yourName {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: var(--components-input-text-size);
+  background-color: transparent;
+  height: 24px;
+  letter-spacing: 0.15px;
+  line-height: 24px;
+  color: var(--text-secondary);
+  align-items: center;
+  flex-shrink: 0;
+  min-width: 250px;
+  padding: 0;
+}
+.emailAddress,
+.nameInput,
+.yourName {
+  align-self: stretch;
+  display: flex;
+}
+.nameInput {
+  border-radius: var(--br-9xs);
+  border: 1px solid var(--other-outlined-border);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-2xs);
+}
+.emailAddress {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-family: var(--components-button-large);
+  font-size: var(--components-input-text-size);
+  background-color: transparent;
+  height: 24px;
+  position: relative;
+  letter-spacing: 0.15px;
+  line-height: 24px;
+  color: var(--text-secondary);
+  text-align: left;
+  align-items: center;
+  flex-shrink: 0;
+  min-width: 250px;
+  padding: 0;
+}
+.emailInput,
+.formFields {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.emailInput {
+  border-radius: var(--br-9xs);
+  border: 1px solid var(--other-outlined-border);
+  padding: var(--padding-sm) var(--padding-2xs);
+}
+.formFields {
+  gap: var(--gap-3xs);
+}
+.buttonInst {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--components-button-large-size);
+  letter-spacing: 0.46px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--components-button-large);
+  color: var(--studio-darkmode-allwhite-ffffff);
+  text-align: center;
+}
+.button,
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-mini) var(--padding-3xs);
+  background-color: var(--color-orange);
+  width: 100%;
+  border-radius: var(--br-9xs);
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 160px;
+}
+.button:hover {
+  background-color: #c76600;
+}
+.form {
+  margin: 0;
+  align-self: stretch;
+  border-radius: 12px;
+  background-color: var(--studio-darkmode-allwhite-ffffff);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--color-whitesmoke);
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 28px 29px;
+  gap: 17px;
+}
+.formContainer,
+.subscribesection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.formContainer {
+  width: 550px;
+  justify-content: center;
+  padding: var(--padding-xl) 0;
+  gap: 30px;
+  max-width: 550px;
+}
+.subscribesection {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  justify-content: flex-start;
+  padding: 45px var(--padding-xl);
+  background-image: url(/public/subscribesection@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-cornflowerblue-200);
+  font-family: var(--components-button-large);
+}
+@media screen and (max-width: 750px) {
+  .formTitle {
+    font-size: var(--font-size-5xl);
+  }
+}
+@media screen and (max-width: 675px) {
+  .formContainer {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .formTitle {
+    font-size: var(--font-size-lg);
+  }
+}

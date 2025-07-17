@@ -1,0 +1,140 @@
+.imageIcon {
+  border-radius: var(--br-3xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.hotelname,
+.hoteltype,
+.imageIcon,
+.price {
+  align-self: stretch;
+  position: relative;
+}
+.hoteltype {
+  letter-spacing: 0.02em;
+  color: var(--color-gray-100);
+}
+.hotelname,
+.price {
+  letter-spacing: 0.04em;
+}
+.hotelname {
+  margin: 0;
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: inherit;
+}
+.price {
+  font-size: var(--font-size-lg);
+}
+.stayDetailsRows {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 6px;
+}
+.videoIcon {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.stayDetails {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 11px;
+}
+.vectorIcon {
+  height: 17.2px;
+  width: 15.7px;
+  position: relative;
+}
+.rating1 {
+  position: relative;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 25px;
+}
+.vectorParent {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2px;
+}
+.reviews {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.04em;
+  color: var(--color-cornflowerblue-100);
+}
+.button,
+.rating {
+  align-self: stretch;
+}
+.rating {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.button {
+  position: relative;
+  letter-spacing: 0.46px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.hotelcard,
+.moreDetailsButton {
+  display: flex;
+  flex-direction: column;
+}
+.moreDetailsButton {
+  align-self: stretch;
+  border-radius: var(--br-9xs);
+  border: 1px solid #cdddec;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+  white-space: nowrap;
+  text-align: center;
+  font-size: var(--components-button-large-size);
+  color: var(--color-cornflowerblue-100);
+}
+.hotelcard {
+  width: 100%;
+  position: relative;
+  border-radius: var(--br-3xs);
+  background-color: var(--studio-darkmode-allwhite-ffffff);
+  border: 1px solid var(--color-whitesmoke);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 13px var(--padding-xs);
+  gap: 23px;
+  min-width: 280px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--components-input-text-size);
+  color: var(--color-darkslategray-200);
+  font-family: var(--components-button-large);
+}
+.hotelcard:hover {
+  background-color: rgba(226, 226, 226, 0.1);
+}

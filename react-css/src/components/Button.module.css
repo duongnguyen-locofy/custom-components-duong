@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'vegan';
+  src: url('./vegan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.button,
+.text {
+  position: relative;
+}
+.text {
+  flex: 1;
+  letter-spacing: 0.46px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'vegan';
+}
+.button {
+  width: 100%;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-orange);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-mini) var(--padding-3xs);
+  box-sizing: border-box;
+  max-width: 160px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: var(--components-button-large-size);
+  color: var(--studio-darkmode-allwhite-ffffff);
+  font-family: var(--components-button-large);
+}

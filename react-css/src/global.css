@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --components-button-large: Roboto;
+  --font-baloo-bhai: "Baloo Bhai";
+
+  /* font sizes */
+  --font-size-xl: 20px;
+  --components-input-text-size: 16px;
+  --font-size-5xl: 24px;
+  --font-size-lgi: 19px;
+  --components-button-large-size: 15px;
+  --font-size-lg: 18px;
+  --font-size-sm: 14px;
+
+  /* Colors */
+  --color-whitesmoke: #eaeaea;
+  --color-black: #000;
+  --color-cornflowerblue-100: #1262af;
+  --color-cornflowerblue-200: #1262ae;
+  --studio-darkmode-allwhite-ffffff: #fff;
+  --color-lightgray: #ccc;
+  --color-gray-100: #8e8e94;
+  --text-secondary: rgba(0, 0, 0, 0.6);
+  --other-outlined-border: rgba(0, 0, 0, 0.23);
+  --color-darkslategray-100: #424242;
+  --color-darkslategray-200: #303030;
+  --color-orange: #f99a0e;
+
+  /* Gaps */
+  --gap-2xl: 21px;
+  --gap-6xs: 7px;
+  --gap-5xs: 8px;
+  --gap-xs: 12px;
+  --gap-xl: 20px;
+  --gap-sm: 14px;
+  --gap-3xs: 10px;
+
+  /* Paddings */
+  --padding-lg: 18px;
+  --padding-lgi: 19px;
+  --padding-xl: 20px;
+  --padding-12xs: 1px;
+  --padding-6xs: 7px;
+  --padding-3xs: 10px;
+  --padding-xs: 12px;
+  --padding-11xl: 30px;
+  --padding-mini: 15px;
+  --padding-sm: 14px;
+  --padding-2xs: 11px;
+
+  /* Border radiuses */
+  --br-3xs: 10px;
+  --br-9xs: 4px;
+}
