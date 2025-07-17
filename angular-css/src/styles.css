@@ -2,8 +2,8 @@
 @font-face {
   font-family: 'itnicons';
   src:
-    url('https://d3beo87skfz9b9.cloudfront.net/2zz2zPCSUdB5RNkuUQQsVssg7HT/md71xhr4m9i29b0ctx.ttf') format('truetype'),
-    url('https://d3beo87skfz9b9.cloudfront.net/2zz2zPCSUdB5RNkuUQQsVssg7HT/md71xhr5jhlvjxinfy.woff') format('woff'),
+    url('./itnicons.ttf') format('truetype'),
+    url('./itnicons.woff') format('woff'),
     url('./itnicons.svg?2pq66s#itnicons') format('svg');
   font-weight: normal;
   font-style: normal;

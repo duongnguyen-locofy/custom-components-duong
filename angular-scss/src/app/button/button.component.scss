@@ -1,9 +1,4 @@
-@font-face {
-  font-family: "vegan";
-  src: url('https://d3beo87skfz9b9.cloudfront.net/2zz2zPCSUdB5RNkuUQQsVssg7HT/md7akuhhlk7rvpwvbkb.ttf') format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
+@use "../custom-style.css";
 p {
   font-family: "vegan";
 }
