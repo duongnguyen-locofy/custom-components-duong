@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'vegan';
+  src: url('./vegan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  font-family: 'vegan';
+}
+
+.custom-button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+}
