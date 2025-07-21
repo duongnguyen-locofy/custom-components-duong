@@ -1,0 +1,49 @@
+{
+  "name": "@rupertong-ui/core-autocomplete",
+  "version": "1.3.0",
+  "description": "Autocomplete selector for component library",
+  "keywords": [],
+  "license": "ISC",
+  "sideEffects": [
+    "*.css"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/esm/index.js",
+  "src": "lib/index.tsx",
+  "types": "dist/types/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "module-bundler"
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.61",
+    "@rupertong-ui/utils-build-module-bundler": "^1.0.0",
+    "@rupertong-ui/utils-ui-testing": "^1.1.0",
+    "react": "^17.0.0"
+  },
+  "peerDependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.61",
+    "react": "^17.0.0"
+  },
+  "dependencies": {
+    "@rupertong-ui/core-chip": "^1.1.0",
+    "@rupertong-ui/core-text-field": "^1.2.0",
+    "@rupertong-ui/core-theme": "^1.2.2",
+    "@rupertong-ui/core-typography": "^1.0.7",
+    "@rupertong-ui/core-underlined-text-field": "^1.2.0",
+    "clsx": "^1.1.1"
+  }
+}

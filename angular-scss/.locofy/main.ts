@@ -54,7 +54,7 @@
 
       const handleImage = (src: string) => {
         if (!src) return;
-        if (typeof src !== 'string' || (src.startsWith('http') || src.startsWith('data:') || src.startsWith('blob:'))) {
+        if (typeof src !== 'string' || (src.startsWith('http') || src.startsWith('data:'))) {
           return;
         }
 

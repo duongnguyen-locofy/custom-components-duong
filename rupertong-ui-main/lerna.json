@@ -1,0 +1,44 @@
+{
+  "packages": [
+    "packages/core/*",
+    "packages/utils/*"
+  ],
+  "version": "independent",
+  "hoist": true,
+  "stream": true,
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "ignoreChanges": [
+        "**/*.md",
+        "**/docs/*",
+        "**/*.stories.*",
+        "**/*.config.*",
+        "**/*.test.*",
+        "**/*.spec.*"
+      ]
+    },
+    "version": {
+      "conventionalCommits": true,
+      "ignoreChanges": [
+        "**/*.md",
+        "**/docs/*",
+        "**/*.stories.*",
+        "**/*.config.*",
+        "**/*.test.*",
+        "**/*.spec.*"
+      ],
+      "message": "chore(release): publish",
+      "changelogPreset": {
+        "name": "conventionalcommits",
+        "commitUrlFormat": "@https://github.com/rupert-ong/rupertong-ui/commit/{{hash}}",
+        "compareUrlFormat": "@https://github.com/rupert-ong/rupertong-ui/compare/{{previousTag}}...{{currentTag}}"
+      }
+    }
+  },
+  "bootstrap": {
+    "npmClientArgs": [
+      "--no-package-lock"
+    ]
+  }
+}

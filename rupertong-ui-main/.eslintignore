@@ -1,0 +1,16 @@
+node_modules
+dist
+build
+coverage
+
+/packages/orders/orders-drug-search/lib/stories/DrugSearch.stories.tsx
+/packages/orders/orders-table-with-history/lib/components/OrdersTable/utils/utils.tsx
+/packages/orders/orders-table-with-history/lib/components/OrderDetailsHistoryTable/utils/utils.tsx
+
+.eslintrc.js
+husky.config.js
+jest.config.js
+jest.config.base.js
+lint-staged.config.js
+
+webpack.config.js

@@ -1,0 +1,37 @@
+{
+  "name": "@rupertong-ui/package-template",
+  "version": "1.0.0-alpha.0",
+  "description": "Sample package description",
+  "keywords": [],
+  "license": "ISC",
+  "sideEffects": [
+    "*.css"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/esm/index.js",
+  "src": "lib/index.tsx",
+  "types": "dist/types/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "module-bundler"
+  },
+  "devDependencies": {
+    "@rupertong-ui/utils-build-module-bundler": "^1.0.0",
+    "@rupertong-ui/utils-ui-testing": "^1.0.0",
+    "@material-ui/core": "^4.11.4",
+    "react": "^17.0.0"
+  },
+  "peerDependencies": {
+    "@material-ui/core": "^4.11.4",
+    "react": "^17.0.0"
+  }
+}

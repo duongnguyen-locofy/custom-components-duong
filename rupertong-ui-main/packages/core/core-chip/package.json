@@ -1,0 +1,43 @@
+{
+  "name": "@rupertong-ui/core-chip",
+  "version": "1.1.0",
+  "description": "Chip element for component library",
+  "keywords": [],
+  "license": "ISC",
+  "sideEffects": [
+    "*.css"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/esm/index.js",
+  "src": "lib/index.tsx",
+  "types": "dist/types/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "module-bundler"
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@rupertong-ui/utils-build-module-bundler": "^1.0.0",
+    "@rupertong-ui/utils-ui-testing": "^1.1.0",
+    "react": "^17.0.0"
+  },
+  "peerDependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "react": "^17.0.0"
+  },
+  "dependencies": {
+    "@rupertong-ui/core-theme": "^1.2.3",
+    "clsx": "^1.1.1"
+  }
+}
