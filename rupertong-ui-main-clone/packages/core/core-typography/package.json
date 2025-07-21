@@ -1,0 +1,41 @@
+{
+  "name": "@rupertong-ui/core-typography",
+  "version": "1.0.7",
+  "description": "Core typography component for rupertong-ui component library",
+  "keywords": [],
+  "license": "ISC",
+  "sideEffects": [
+    "*.css"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/esm/index.js",
+  "src": "lib/index.tsx",
+  "types": "dist/types/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "module-bundler"
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@rupertong-ui/utils-build-module-bundler": "^1.0.0",
+    "react": "^17.0.0"
+  },
+  "peerDependencies": {
+    "@material-ui/core": "^4.11.4",
+    "react": "^17.0.0"
+  },
+  "dependencies": {
+    "@rupertong-ui/core-theme": "^1.2.3",
+    "clsx": "^1.1.1",
+    "lodash": "^4.17.21"
+  }
+}

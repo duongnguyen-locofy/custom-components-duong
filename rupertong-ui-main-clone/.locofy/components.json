@@ -1,0 +1,94 @@
+[
+  {
+    "name": "Button",
+    "path": "packages/core/core-button/lib/index.tsx",
+    "rawInfo": {
+      "value": "import {\n  forwardRef,\n  FunctionComponentElement,\n  MouseEvent,\n  MutableRefObject,\n  ReactElement,\n  Ref,\n  useRef,\n  useState,\n} from 'react';\n\nimport MuiButton from '@material-ui/core/Button';\nimport IconButton from '@material-ui/core/IconButton';\nimport { Typography } from '@rupertong-ui/core-typography';\nimport { clsx } from 'clsx';\n\nimport useStyles from './styles';\nimport {\n  ButtonProps,\n  ButtonVariants,\n  IconButtonPropsClasses,\n  RegularButtonPropsClasses,\n} from './types';\n\nconst ButtonComponent = <T extends ButtonVariants>(\n  {\n    label = 'test',\n    disabled,\n    onClick,\n    variant = 'text',\n    size = 'large',\n    className,\n    classes,\n    children,\n    component = 'button',\n    ...props\n  }: ButtonProps<T>,\n  ref: Ref<HTMLButtonElement>\n): FunctionComponentElement<ButtonProps<T>> => {\n  const baseClasses = useStyles();\n\n  const [pressed, setPressed] = useState(false);\n  const { onMouseUp, onMouseLeave, onMouseDown } = props;\n\n  const onMouseEvent = (down: boolean): boolean => {\n    setPressed(down && !disabled);\n    return true;\n  };\n\n  const buttonRef = useRef<HTMLButtonElement>(null);\n\n  const handleClick = (event: MouseEvent<HTMLButtonElement>) => {\n    if (onClick) {\n      onClick(event);\n    }\n    const tempRef = (ref || buttonRef) as MutableRefObject<HTMLButtonElement>;\n    if (tempRef && tempRef.current) {\n      tempRef.current.blur();\n    }\n  };\n\n  const sharedProps = {\n    className: clsx(className, 'evergreen-btn'),\n    color: 'primary',\n    disabled,\n    disableFocusRipple: true,\n    disableRipple: true,\n    disableTouchRipple: true,\n    onClick: handleClick,\n    onMouseUp: (e: MouseEvent<HTMLButtonElement>) =>\n      onMouseEvent(false) && onMouseUp && onMouseUp(e),\n    onMouseLeave: (e: MouseEvent<HTMLButtonElement>) =>\n      onMouseEvent(false) && onMouseLeave && onMouseLeave(e),\n    onMouseDown: (e: MouseEvent<HTMLButtonElement>) =>\n      onMouseEvent(true) && onMouseDown && onMouseDown(e),\n    ref: ref || buttonRef,\n    component,\n  };\n\n  const buttonClasses = classes as RegularButtonPropsClasses;\n\n  if (variant === 'icon') {\n    const iconButtonClasses = classes as IconButtonPropsClasses;\n\n    return (\n      <IconButton\n        {...sharedProps}\n        classes={{\n          root: clsx(\n            baseClasses.icon,\n            pressed && baseClasses.pressed,\n            iconButtonClasses && iconButtonClasses.root\n          ),\n          disabled: clsx(\n            baseClasses.disabled,\n            iconButtonClasses && iconButtonClasses.disabled\n          ),\n          label: clsx(\n            baseClasses.label,\n            iconButtonClasses && iconButtonClasses.label\n          ),\n          sizeSmall: clsx(iconButtonClasses && iconButtonClasses.sizeSmall),\n          edgeStart: clsx(iconButtonClasses && iconButtonClasses.edgeStart),\n          edgeEnd: clsx(iconButtonClasses && iconButtonClasses.edgeEnd),\n        }}\n        size={size !== 'large' ? size : 'medium'}\n        {...props}\n      >\n        {children}\n      </IconButton>\n    );\n  }\n\n  return (\n    <MuiButton\n      {...sharedProps}\n      variant={variant}\n      size={size}\n      classes={{\n        root: clsx(\n          baseClasses.root,\n          pressed && baseClasses.pressed,\n          buttonClasses && buttonClasses.root\n        ),\n        label: clsx(baseClasses.label, buttonClasses && buttonClasses.label),\n        contained: clsx(\n          baseClasses.contained,\n          buttonClasses && buttonClasses.contained\n        ),\n        outlined: clsx(\n          baseClasses.outlined,\n          buttonClasses && buttonClasses.outlined\n        ),\n        focusVisible: clsx(\n          baseClasses.focused,\n          buttonClasses && buttonClasses.focusVisible\n        ),\n        disabled: clsx(\n          baseClasses.disabled,\n          buttonClasses && buttonClasses.disabled\n        ),\n        text: clsx(baseClasses.text, buttonClasses && buttonClasses.text),\n        sizeSmall: clsx(\n          baseClasses.sizeSmall,\n          buttonClasses && buttonClasses.sizeSmall\n        ),\n        sizeLarge: clsx(\n          baseClasses.sizeLarge,\n          buttonClasses && buttonClasses.sizeLarge\n        ),\n        textSizeSmall: clsx(\n          baseClasses.textSizeSmall,\n          buttonClasses && buttonClasses.textSizeSmall\n        ),\n        textSizeLarge: clsx(\n          baseClasses.textSizeLarge,\n          buttonClasses && buttonClasses.textSizeLarge\n        ),\n      }}\n      {...props}\n    >\n      <Typography variant=\"button\">{children || label}</Typography>\n    </MuiButton>\n  );\n};\n\n/**\n * Buttons make common actions immediately visible and easy to perform with one click or tap. They can be used for any type of action, including navigation.\n\n For text based buttons (`text` | `contained` | `outlined`), you can use the `label` or `children` prop for the button's display.\n\n For icon based buttons, you must specify a `children` prop.\n */\nexport const Button = forwardRef<HTMLButtonElement>(ButtonComponent) as <\n  T extends ButtonVariants\n>(\n  props: ButtonProps<T> & { ref?: Ref<HTMLButtonElement> }\n) => ReactElement;\n\nexport default Button;\n\n\n"
+    },
+    "props": [
+      {
+        "name": "label",
+        "propType": 1,
+        "defaultValue": {
+          "value": "'test'"
+        },
+        "attr": "",
+        "styleName": "",
+        "actionName": "",
+        "condition": "",
+        "clientId": "hz9fzq",
+        "isOptional": true,
+        "expectValues": [],
+        "keys": []
+      },
+      {
+        "name": "variant",
+        "propType": 1,
+        "defaultValue": {
+          "value": "'text'"
+        },
+        "attr": "variant",
+        "styleName": "",
+        "actionName": "",
+        "condition": "",
+        "clientId": "pab3or",
+        "isOptional": true,
+        "expectValues": [],
+        "keys": []
+      },
+      {
+        "name": "size",
+        "propType": 1,
+        "defaultValue": {
+          "value": "'large'"
+        },
+        "attr": "size",
+        "styleName": "",
+        "actionName": "",
+        "condition": "",
+        "clientId": "1izjjct",
+        "isOptional": true,
+        "expectValues": [],
+        "keys": []
+      },
+      {
+        "name": "component",
+        "propType": 1,
+        "defaultValue": {
+          "value": "'button'"
+        },
+        "attr": "",
+        "styleName": "",
+        "actionName": "",
+        "condition": "",
+        "clientId": "14hq95p",
+        "isOptional": true,
+        "expectValues": [],
+        "keys": []
+      }
+    ],
+    "import": [],
+    "lib": [
+      {
+        "name": "react",
+        "version": "^17.0.0"
+      },
+      {
+        "name": "clsx",
+        "version": "^1.1.1"
+      }
+    ],
+    "codeSettings": {
+      "typescript": true,
+      "cssStyling": ""
+    },
+    "clientId": "p9aood",
+    "selectorId": "zxiiuwasdohqvcnphrmsm",
+    "previewItems": [
+      {
+        "url": "https://d3beo87skfz9b9.cloudfront.net/2zx7iiUWaS40DohQvcnpHR1M4sM/bundle-1753063933010.js",
+        "type": 2
+      }
+    ]
+  }
+]

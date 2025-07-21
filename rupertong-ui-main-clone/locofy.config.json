@@ -1,0 +1,8 @@
+{
+  "components": [
+    "./packages/core/core-button/lib/index.tsx"
+  ],
+  "wrapper": "./locofy/locofy-wrapper.tsx",
+  "projectId": "2zx7iiUWaS40DohQvcnpHR1M4sM",
+  "projectName": "custom-font-1"
+}

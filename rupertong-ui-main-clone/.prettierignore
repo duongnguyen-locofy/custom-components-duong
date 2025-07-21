@@ -1,0 +1,9 @@
+# Ignore artifacts:
+/node_modules
+
+# Ignore type declarations:
+/packages/core/core-table/declarations.d.ts
+/packages/orders/orders-table-with-history/declarations.d.ts
+
+# Ignore all HTML files:
+*.html
