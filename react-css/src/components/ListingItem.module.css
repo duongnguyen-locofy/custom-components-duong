@@ -1,0 +1,152 @@
+.listingimageIcon {
+  align-self: stretch;
+  height: 300px;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 0;
+}
+.superhostIcon {
+  height: 10px;
+  width: 7px;
+  position: relative;
+}
+.superhost {
+  position: relative;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+.heartIcon,
+.superhostTag {
+  position: absolute;
+  margin: 0 !important;
+  top: 10px;
+}
+.superhostTag {
+  left: 10px;
+  border-radius: 13px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 6px;
+  gap: 2px;
+  z-index: 1;
+}
+.heartIcon {
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  object-fit: cover;
+  z-index: 2;
+}
+.listingAddress,
+.listingName {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.02em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.listingName {
+  line-height: 16px;
+  font-weight: 600;
+}
+.listingAddress {
+  font-size: 14px;
+  line-height: 14px;
+  color: #787878;
+}
+.listingCont {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.rating {
+  position: relative;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+.starIcon {
+  height: 13px;
+  width: 13px;
+  position: relative;
+}
+.listingInfo,
+.ratingCont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+}
+.ratingCont {
+  font-size: 14px;
+}
+.listingInfo {
+  align-self: stretch;
+}
+.night {
+  position: relative;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #787878;
+}
+.bottomContainer,
+.pricePerNight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.pricePerNight {
+  flex: 1;
+  gap: 2px;
+}
+.bottomContainer {
+  align-self: stretch;
+  height: 28px;
+}
+.itemDetails,
+.listingItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-family: Archivo;
+}
+.itemDetails {
+  align-self: stretch;
+  padding: 16px;
+  gap: 14px;
+  z-index: 3;
+  font-size: 16px;
+  color: #171e1d;
+}
+.listingItem {
+  width: 320px;
+  height: 408px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  min-width: 288px;
+  font-size: 12px;
+  color: #00c29f;
+}
+.listingItem:hover {
+  border: 1px solid #00f;
+  box-sizing: border-box;
+}
+.listingItem:hover .listingName {
+  color: #00f;
+}

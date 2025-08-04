@@ -1,5 +1,5 @@
 module.exports = {
   components: [
-    "./src/components/Button.tsx",
+    "./src/components/ListingItem.tsx",
   ],
 };

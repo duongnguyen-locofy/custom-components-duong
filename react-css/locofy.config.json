@@ -1,7 +1,7 @@
 {
   "components": [
-    "./src/components/Button.tsx"
+    "./src/components/ListingItem.tsx"
   ],
-  "projectId": "2ztoCY8BkBnsKOswUHrFUtNW0hW",
-  "projectName": "Accordions - 1"
+  "projectId": "30fdyKiFo9Wj39gIykcHSBQkAAo",
+  "projectName": "Custom component test cases - 2"
 }

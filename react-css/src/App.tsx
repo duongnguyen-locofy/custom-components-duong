@@ -6,6 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import Button from "./components/Button";
+import ListingItem from './components/ListingItem';
 
 function App() {
   const action = useNavigationType();
@@ -77,7 +78,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Button />} />
+      <Route path="/" element={<ListingItem />} />
       {/* <Route path="/tripitem" element={<TripItem />} />
       <Route path="/destinationcard" element={<DestinationCard />} />
       <Route path="/holidaycard" element={<HolidayCard />} />
