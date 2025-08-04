@@ -1,6 +1,7 @@
 {
   "components": [
-    "./src/app/button/button.component.ts"
+    "./src/app/button/button.component.ts",
+    "./src/app/card/listing-card.component.ts"
   ],
   "projectId": "302SF40r3aHRSflmB2YaZfzBGpm",
   "projectName": "Accordions - 2"

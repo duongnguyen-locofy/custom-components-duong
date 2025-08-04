@@ -12,6 +12,14 @@
     position: relative;
   }
 
+  .cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
   button {
     padding: 0.5rem 1rem;
     background-color: #007bff;
@@ -29,6 +37,24 @@
 <main class="main">
   <app-user />
   <app-button (buttonClick)="onClick()">Click me!</app-button>
+
+  <h2>Listing Card Component Examples</h2>
+  <div class="cards-container">
+    <app-listing-card [showSuperhostTag]="listing1.showSuperhostTag" [listingName]="listing1.listingName"
+      [listingAddress]="listing1.listingAddress" [rating]="listing1.rating" [price]="listing1.price"
+      [propertyImage]="listing1.propertyImage">
+    </app-listing-card>
+
+    <app-listing-card [showSuperhostTag]="listing2.showSuperhostTag" [listingName]="listing2.listingName"
+      [listingAddress]="listing2.listingAddress" [rating]="listing2.rating" [price]="listing2.price"
+      [propertyImage]="listing2.propertyImage">
+    </app-listing-card>
+
+    <app-listing-card [showSuperhostTag]="listing3.showSuperhostTag" [listingName]="listing3.listingName"
+      [listingAddress]="listing3.listingAddress" [rating]="listing3.rating" [price]="listing3.price"
+      [propertyImage]="listing3.propertyImage">
+    </app-listing-card>
+  </div>
 </main>
 
 <router-outlet />

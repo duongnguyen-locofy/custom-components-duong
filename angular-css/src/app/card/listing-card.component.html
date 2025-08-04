@@ -1,0 +1,40 @@
+<div class="listing-card {{ className }}">
+  <div class="image-container">
+    <img class="property-image" [alt]="listingName || 'Property image'"
+      [src]="propertyImage || 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=300&fit=crop'" />
+
+    <div class="superhost-tag" *ngIf="showSuperhostTag">
+      <span class="superhost-icon">⭐</span>
+      <div class="superhost-text">Superhost</div>
+    </div>
+
+    <div class="heart-icon-wrapper">
+      <span class="heart-icon">♡</span>
+    </div>
+  </div>
+
+  <div class="property-details">
+    <div class="property-info">
+      <div class="property-name">
+        {{ listingName || 'Property Name' }}
+      </div>
+      <div class="property-address">
+        {{ listingAddress || 'Location' }}
+      </div>
+    </div>
+
+    <div class="rating-container">
+      <div class="rating-value">
+        {{ rating || '0.0' }}
+      </div>
+      <span class="star-icon">⭐</span>
+    </div>
+  </div>
+
+  <div class="price-container">
+    <div class="price-value">
+      {{ price || '$0' }}
+    </div>
+    <div class="price-unit">/night</div>
+  </div>
+</div>
